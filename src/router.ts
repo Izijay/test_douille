@@ -4,6 +4,7 @@ import Home from "./views/Home.vue"
 import NewPost from "./views/NewPost.vue"
 import ShowPost from "./views/ShowPost.vue"
 import EditPost from "./views/EditPost.vue"
+import Profile from "./views/Profile.vue"
 
 
 export const router = createRouter({
@@ -33,6 +34,22 @@ export const router = createRouter({
 		{
 			path: "/posts/:id",
 			component: ShowPost,
+		},
+		{
+			path: "/profile",
+			component: Profile,
+		},
+		{
+			path: "/pong",
+			component: () => import("./views/Pong.vue"),
+		},
+		{
+			path: "/chat",
+			component: () => import("./views/Chat.vue"),
+		},
+		{
+			path: "/friends",
+			component: () => import("./views/Friends.vue"),
 		}
 	  ]
 })

@@ -11,6 +11,26 @@ async function logout () {
 	await usersStore.logout();
 	router.push('/');
 }
+
+function goToProfile () {
+  router.push('/profile');
+}
+
+function goToHome () {
+  router.push('/');
+}
+
+function goToChat () {
+  router.push('/chat');
+}
+
+function goToPong () {
+  router.push('/pong');
+}
+
+function goToFriends () {
+  router.push('/friends');
+}
 </script>
 
 <template>
@@ -53,19 +73,19 @@ async function logout () {
   </section>
   <nav class="level">
     <p class="level-item has-text-centered">
-      <a class="button is-primary is-outlined is-active">Home</a>
+      <a class="button is-primary is-outlined is-active" @click="goToHome">Home</a>
     </p>
     <p class="level-item has-text-centered">
-      <a class="button is-primary is-outlined is-active">Your Profile</a>
+      <a class="button is-primary is-outlined is-active" @click="goToProfile">Your Profile</a>
     </p>
     <p class="level-item has-text-centered">
-      <a class="button is-danger is-large is-rounded is-active is-focused">PLAY</a>
+      <a class="button is-danger is-large is-rounded is-active is-focused" @click="goToPong" >PLAY</a>
     </p>
     <p class="level-item has-text-centered">
-      <a class="button is-primary is-outlined is-active">Chat</a>
+      <a class="button is-primary is-outlined is-active" @click="goToChat">Chat</a>
     </p>
     <p class="level-item has-text-centered">
-      <a class="button is-primary is-outlined is-active">Friend</a>
+      <a class="button is-primary is-outlined is-active" @click="goToFriends">Friends</a>
     </p>
   </nav>
 
