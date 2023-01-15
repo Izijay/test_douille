@@ -5,7 +5,17 @@
 <template>
 	<div class="section">
 		<div class="container">
-			Username....Profile
+			<div class="box">
+				<p>Username....Profile</p>
+			</div>
 		</div>
 	</div>
 </template>
+
+<style scoped>
+	.box {
+		justify-content: center;
+		align-items: center;
+		display: flex;
+	}
+</style>

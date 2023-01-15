@@ -5,7 +5,17 @@
 <template>
 	<div class="section">
 		<div class="container">
-			Chat Page
+			<div class="box">
+				Chat Page
+			</div>
 		</div>
 	</div>
 </template>
+
+<style scoped>
+	.box {
+		justify-content: center;
+		align-items: center;
+		display: flex;
+	}
+</style>

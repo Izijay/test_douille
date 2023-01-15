@@ -48,9 +48,18 @@ function dropDownMenu() {
 		</div>
 	</div>
 	<div class="box"></div>
-	<div class="box"></div>
+	<div class="box">ou un truc du genre</div>
 	<div class="box">
-		ou un truc du genre
+		
 		<h2>Une fois que j'aurai trouve le moyen de le faire fonctionner correctement ce batard</h2>
 	</div>
 </template>
+
+<style scoped>
+	.box {
+		justify-content: center;
+		align-items: center;
+		display: flex;
+	}
+
+</style>

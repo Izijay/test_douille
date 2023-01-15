@@ -42,7 +42,7 @@ usersStore.authenticate()
 
 
 .section {
-  background-color: #ecf0f1;
+  background-color: #585a5a;
 }
 
 ul {

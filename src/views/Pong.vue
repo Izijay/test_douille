@@ -5,7 +5,18 @@
 <template>
 	<div class="section">
 		<div class="container">
-			Pong Game
+			<div class="box">
+				Pong Game
+			</div>
 		</div>
 	</div>
 </template>
+
+<style scoped>
+	.box {
+		justify-content: center;
+		align-items: center;
+		display: flex;
+	}
+
+</style>

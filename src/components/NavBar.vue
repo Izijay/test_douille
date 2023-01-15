@@ -34,19 +34,6 @@ function goToFriends () {
 </script>
 
 <template>
-<!-- 	<div class="navbar">
-		<div class="navbar-end">
-			<div v-if="usersStore.currentUserId" class="buttons">
-				<RouterLink to="/posts/new" class="button">New Post</RouterLink>
-				<button class="button" @click="logout()">Log Out</button>
-			</div>
-			<div v-else class="buttons">
-				<button class="button" @click="modal.showModal('signUp')">Sign Up</button>
-				<button class="button" @click="modal.showModal('signIn')">Sign In</button>
-			</div>
-		</div>
-	</div>
- -->
 	<section class="hero is-small is-primary">
     <div class="hero-body">
       <div class="columns">
@@ -76,7 +63,7 @@ function goToFriends () {
       <a class="button is-primary is-outlined is-active" @click="goToHome">Home</a>
     </p>
     <p class="level-item has-text-centered">
-      <a class="button is-primary is-outlined is-active" @click="goToProfile">Your Profile</a>
+      <a class="button is-primary is-outlined is-active" @click="goToProfile">Profile</a>
     </p>
     <p class="level-item has-text-centered">
       <a class="button is-danger is-large is-rounded is-active is-focused" @click="goToPong" >PLAY</a>
