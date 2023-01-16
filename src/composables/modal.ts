@@ -16,8 +16,11 @@ export function useModal() {
 				case 'signUp': return component.value = SignupForm
 			}
 		},
-		hideModal: () => {
-			
+		whichModal: () => {
+			if (component.value === SignupForm) return true
+			else return false
+		},
+		hideModal: () => {			
 			show.value = false
 		},
 	}

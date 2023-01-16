@@ -31,12 +31,21 @@ function handleInput(event: Event) {
 				@input="handleInput"
 			>
 			<input 
-				v-else 
+				v-else-if="name === 'Password'" 
 				:type="type" 
 				:id="name" 
 				:value="modelValue" 
 				class="input" 
 				placeholder="Your password" 
+				@input="handleInput"
+			>
+			<input 
+				v-else-if="name === 'Username'" 
+				:type="type" 
+				:id="name" 
+				:value="modelValue" 
+				class="input" 
+				placeholder="Your username" 
 				@input="handleInput"
 			>
 		</div>
